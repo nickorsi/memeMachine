@@ -1,0 +1,219 @@
+/*--- General Resest Styling ---*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  color: #4F709C
+}
+
+/*--- Body Styling ---*/
+
+body {
+  background-image: url("Falling Gears.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*--- Header Styling ---*/
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 3px solid #213555;
+  border-radius: 10px;
+  background-color: #F0F0F0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #213555;
+  text-shadow: 10px 10px 10px #4F709C
+}
+
+main {
+  max-width: 1100px;
+  margin: 0px auto;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #213555;
+}
+
+h2+p, label {
+  color: #E5D283;
+}
+
+h2+P {
+  margin: 10px 40px;
+  background-color: #4F709C;
+  border: 3px solid #213555;
+  border-radius: 10px;
+  padding: 5px;
+  line-height: 1.5rem;
+}
+
+form {
+  border: 3px solid #213555;
+  background-color: #4F709C;
+  border-radius: 10px;;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 40px;
+}
+
+form>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+form>div>input:not(#memeSubmit) {
+  flex: 1;
+}
+
+form>div>input {
+  margin: 5px 10px
+}
+
+form>div>label {
+  width: 8rem;
+  margin: 5px 50px 5px 10px;
+  align-self: flex-end;
+}
+
+/*--- Styling is applied to the submit button within the form and the button on the memes---*/
+
+#memeSubmit, button {
+  padding: 2px;
+  color: rgba(33,53,85,1);
+  background-color: rgba(240,240,240,1);
+  border: 2px solid rgba(240,240,240,1);
+  border-radius: 10px;
+}
+
+#memeSubmit:hover, button:hover {
+  box-shadow: 0 0 0 3px rgba(56,225, 245,1);
+  cursor: pointer;
+}
+
+#memeSubmit:active, button:active {
+  background-color: rgba(240,240,240,0.7);
+  border: 2px solid rgba(240,240,240,0.7);
+  box-shadow: 0 0 0 0px rgba(56,225, 245,1);
+}
+
+
+/*--- Meme Space Styling ---*/
+
+.memeSpace {
+  max-width: 1200px;;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+.memeContain {
+  margin: 10px 20px;
+  z-index: 0;
+}
+
+.memeDiv {
+  position: relative;
+  width: min-content;
+
+}
+
+.memeTextTop, .memeTextBot {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  -webkit-text-stroke: 0.08rem black;
+  text-transform: uppercase;
+  position: absolute;
+  inline-size: 440px;
+  text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  left: 5px;
+}
+
+.memeTextBot {
+  bottom: 6px;
+}
+
+.memeTextTop {
+  top: 6px;
+}
+
+.img {
+  width: 450px;
+  border-radius: 20px;
+  /* border: 5px solid red; */
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  border-radius: 20px;
+  transition: 0.5s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+
+/*--- Return Link Styling ---*/
+
+.return {
+  position: fixed;
+  bottom: 3vh;
+  left: 3vw;
+  z-index: 1000;
+}
+
+.return>a:link, .return>a:visited {
+  padding: 2px;
+  color: rgba(240,240,240,1);
+  background-color: rgba(33,53,85,1);
+  border: 2px solid rgba(33,53,85,1);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.return>a:hover  {
+  box-shadow: 0 0 0 3px rgba(56,225, 245,1);
+}
+
+.return>a:active  {
+  background-color: rgba(33,53,85,0.7);
+  border: 2px solid rgba(33,53,85,0.7);
+  box-shadow: 0 0 0 0px rgba(56,225, 245,1);
+}

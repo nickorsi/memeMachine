@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="x-icon" href="https://img.icons8.com/bubbles/50/gears.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Meme Machine</title>
+  <link rel="stylesheet" href="Sources/app.css">
+</head>
+<body>
+  <div class="content" id="top">
+    <header>
+      <h1>Meme Machine!</h1>
+    </header>
+    <main>
+      <h2>Welcome to Meme Machine</h2>
+      <p>Do you think you have enough BBE (Big Brain Energy) to craft classy, high brow, instant classic memes? Doubt it. But don't let me dissuade you! Just fill out the form below, click the Build Meme button, and the meme machine will go to work crafting your meme masterpiece (or disaster)!</p>
+      <form id="memeForm">
+        <div class="first">
+          <label for="memeUrl">Image URL</label>
+          <input required type="url" id="memeUrl" name="memeUrl" placeholder="Insert valid URL for your meme image here!">
+        </div>
+        <div class="second">
+          <label for="textTop">Text On Top</label>
+          <input type="text" id="textTop" name="textTop" placeholder="[OPTIONAL] What is the text you want on the top of the meme?" >
+        </div>
+        <div class="third">
+          <label for="textBottom">Text On Bottom</label>
+          <input type="text" id="textBottom"  name="textBottom" placeholder="[OPTIONAL] What is the text you want on the bottom of the meme?">
+        </div>
+        <div class="fourth">
+          <label for="memeSubmit"></label>
+          <input type="submit" id="memeSubmit" value="Build Meme">
+        </div>
+      </form>
+    </main>
+  </div>
+  <footer class="memeSpace">
+    <div class="memeContain">
+      <div class="memeDiv">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Gene_Wilder_as_Willy_Wonka.jpeg/220px-Gene_Wilder_as_Willy_Wonka.jpeg" alt="Willy Wonka" class="img">
+        <p class="memeTextTop">Oh, so you think you can meme?</p>
+        <p class="memeTextBot">Please do try!</p>
+        <div class="overlay">
+          <button>Delete...Forever?</button>
+        </div>
+      </div>
+    </div>
+    <div class="return">
+      <a href="#top">Back To Top</a>
+    </div>
+  </footer>
+  <script src="Sources/app.js"></script>
+</body>
+</html>
