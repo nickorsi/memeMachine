@@ -12,9 +12,9 @@ window.onload = function() {
     console.log('test')
     event.preventDefault();
     //Looks to see if any value has been assigned to the URL input, if not displays message to put choose an image URL
-    // if(document.querySelector("#memeUrl").value === "") window.alert("Please Choose An Image URL!")
+    if(document.querySelector("#memeUrl").value === "") window.alert("Please Choose An Image URL!")
     // //If something is assigned, will do the following
-    // else {
+    else {
       //Create new elements to build the meme
       const memeContain = document.createElement("div");
       const memeDiv = document.createElement("div");
@@ -46,7 +46,7 @@ window.onload = function() {
       document.querySelector("#textTop").value = "";
       //Increment count to track further progression
       count++;
-    // }
+    }
   });
   //Add event listener to delete the memes once the button is clicked
   //Will delegate this listener to the overall parent, which is the footer
